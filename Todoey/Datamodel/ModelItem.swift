@@ -9,14 +9,10 @@
 import Foundation
 
 
-class ModelItem {
+class ModelItem : Encodable, Decodable {
     
     
-    var title: String
-    var done: Bool
-    init() {
-        title = ""
-        done = false
-    }
+    var title: String = ""
+    var done: Bool = false
     
 }
